@@ -1,6 +1,6 @@
 # RMTextViewPlaceholder
 
-![Text View Placeholder in Interface Builder](https://github.com/Ra1phM/RMTextViewPlaceholder/ScreenShot_IB_1.png "Text View Placeholder in Interface Builder")
+![Text View Placeholder in Interface Builder](https://raw.githubusercontent.com/Ra1phM/RMTextViewPlaceholder/master/ScreenShot_IB_1.png "Text View Placeholder in Interface Builder")
 
 `RMTextViewPlaceholder` is a subclass of `UITextView`. It adds support for placeholder text, which is not available by default (only `UILabel` has placeholder). The class is written **Swift** and makes use of the new `@IBDesignable` and `@IBInspectable` functionalities.
 
