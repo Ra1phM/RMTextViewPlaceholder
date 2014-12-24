@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoTextViewPlaceholder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tj9-bX-HeZ" customClass="RMTextViewPlaceholder" customModule="DemoTextViewPlaceholder" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="600" height="550"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="phColor">
+                                        <color key="value" red="0.12986534599999999" green="0.69284654329999995" blue="0.556166418" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="My Placeholder Text"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tj9-bX-HeZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="Mlx-Yr-tpC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tj9-bX-HeZ" secondAttribute="bottom" id="OXg-gQ-d8m"/>
+                            <constraint firstAttribute="trailing" secondItem="Tj9-bX-HeZ" secondAttribute="trailing" id="akS-Qm-Ikn"/>
+                            <constraint firstItem="Tj9-bX-HeZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="odk-pX-w3G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customTextView" destination="Tj9-bX-HeZ" id="qoN-OD-92E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
